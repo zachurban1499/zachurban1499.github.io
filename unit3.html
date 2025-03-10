@@ -1,119 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit 3 - Quality Education Game</title>
-    <style>
-        /* Reset default styles */
-        body, h1, h2, h3, p, a {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(to bottom, maroon, brown, red);
-            color: white;
-            display: grid;
-            place-items: center;
-            min-height: 100vh;
-            font-size: 16px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 3 - Quality Education Game</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    /* Body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #800000, #4b2e1f, #d91e36);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+    /* Navigation Bar Styling */
+    nav {
+      width: 100%;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      z-index: 1000;
+    }
 
-        nav a:hover {
-            background-color: #555;
-        }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-        /* Main content styling */
-        .container {
-            text-align: center;
-            max-width: 800px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
+    nav ul li {
+      list-style-type: none;
+      margin: 0 20px;
+    }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+    nav ul li a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
 
-        h3 {
-            font-size: 18px;
-            margin-top: 15px;
-        }
+    /* Page Content Styling */
+    .content {
+      margin-top: 80px; /* Add space below the navbar */
+      text-align: center;
+    }
 
-        iframe {
-            border: 2px solid white;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
 
-        img {
-            max-width: 100%;
-            border: 2px solid white;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
 
-    </style>
+    h3 {
+      font-size: 1.2em;
+      margin-top: 10px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    iframe {
+      margin-top: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+
+    img {
+      margin-top: 30px;
+      width: 70%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#game">Game</a>
-        <a href="#code">Code</a>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="unit2.html">Unit 2</a></li>
+      <li><a href="unit3.html">Unit 3</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h1>Unit 3 - Quality Education Game</h1>
-        <h2>My game addresses the global goal of Quality Education.</h2>
-        
-        <!-- Game Embed -->
-        <div id="game">
-            <iframe width="410" height="460" src="https://academy.cs.cmu.edu/sharing/saddleBrownSnake4441/embed"></iframe>
-        </div>
+  <!-- Page Content -->
+  <div class="content">
+    <h1>Unit 3 - Quality Education Game</h1>
+    <h2>I made this game to address the global goal of quality education.</h2>
+    
+    <!-- Embedded Game -->
+    <iframe width="410" height="460" src="https://academy.cs.cmu.edu/sharing/saddleBrownSnake4441/embed"></iframe>
 
-        <h3>The goal of this project is to read enough books in order to achieve a quality education. You can use multipliers to read faster.</h3>
-        
-        <h3 id="code">Here is a code snippet from this project:</h3>
-        <img src="media/gamecode.png" alt="Game Code">
+    <h3>In order to win in my game, you have to read enough books to obtain a quality education. You can click on the multipliers to read faster. Below is a code snippet from my game.</h3>
 
-    </div>
+    <!-- Game Snippet Image -->
+    <img src="media/zachlogo.png" alt="Game Logo">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zach Urban | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
