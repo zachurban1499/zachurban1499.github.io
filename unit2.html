@@ -1,22 +1,106 @@
 <html>
   <head>
     <style>
-      body{
-        background:linear-gradient(to bottom, maroon, brown, red);
+      /* General body styles */
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #800000, #3E1C1D, #B22222);
         color: white;
         text-align: center;
-        display:grid;
-        place-items:center;
-      } 
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navigation bar styling */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #575757;
+      }
+
+      /* Main content styling */
+      h1 {
+        font-size: 36px;
+        margin-top: 80px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 20px 0;
+        font-weight: normal;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin: 15px 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin: 20px 0;
+      }
+
+      /* Footer styling */
+      footer {
+        font-size: 14px;
+        margin-top: 30px;
+        text-align: center;
+        color: #ccc;
+      }
+
     </style>
   </head>
-<body>
-  <a href= "index.html">Home</a>
-  <h1>Unit 2- Life on Land</h1>
-  <h2>Murray and I did our project on the global goal of life on land. This goal is meant to help land animals and our forests and plants.</h2>
-  <img src="media/cs-academy-recording (3).gif">
-  <h3> My logo is a mountain range. I changed its color with each call on each side to give it a unique flare.I was also able to relocate my logo by making the parameters adjustable with each call.</h3>
-  <h3> Below is a code snippet from this project.</h3>
-  <img src="media/zachlogo.png">
-</body>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div>
+      <h1>Unit 2 - Life on Land</h1>
+      <h2>
+        Murray and I did our project on the global goal of life on land. This goal
+        is meant to help land animals, our forests, and plants.
+      </h2>
+      <img src="media/cs-academy-recording (3).gif" alt="Animated GIF related to the project">
+      <h3>
+        My logo is a mountain range. I changed its color with each call on each
+        side to give it a unique flare. I was also able to relocate my logo by making
+        the parameters adjustable with each call.
+      </h3>
+      <h3>Below is a code snippet from this project.</h3>
+      <img src="media/zachlogo.png" alt="Project Logo">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Your Company Name. All Rights Reserved.
+    </footer>
+  </body>
 </html>
