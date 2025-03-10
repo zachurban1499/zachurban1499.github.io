@@ -1,22 +1,80 @@
-<html>
-  <head>
-    <style>
-      body{
-        background:linear-gradient(to bottom, maroon, brown, red);
-        color: white;
-        text-align: center;
-        display:grid;
-        place-items:center;
-      } 
-    </style>
-  </head>
-<body>
-  <a href= "unit2.html">Unit2</a>
-  <h1>Zach Urban's Portfolio</h1>
-  <h2>My CS Portolio: Coding python and hitting home runs to the stars!</h2>
-  <img src="media/splashgreen.png">
-  <h3> I created the above splashscreen in Python. I created Affordable and Clean Energy and Gender Equality.</h3>
-  <h3> Below is a code snippet from this project.</h3>
-  <img src="media/codesnippet.png">
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zach Urban's Portfolio</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #800000, #4b2e1f, #d91e36);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    /* Menu Bar Styling */
+    nav {
+      width: 100%;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    /* Page Content Styling */
+    .content {
+      margin-top: 80px; /* Add space below the navbar */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size
